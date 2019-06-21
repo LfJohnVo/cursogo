@@ -46,7 +46,23 @@ func main() {
 /*
 	fmt.Println(gorras(45, "$"));
 */
-	pantalon("rojo", "largo" , "sin bolsillos" , "nike");
+	//pantalon("rojo", "largo" , "sin bolsillos" , "nike");
+
+	var peliculas [3][2] string;
+	peliculas[0][0] = "La verdad duele"
+	peliculas[0][1] = "Mientras duermes"
+	peliculas[1][0] = "Ciudadano ejemplar"
+	peliculas[1][1] = "El señor de los anillos"
+	peliculas[2][0] = "Gran torino"
+	peliculas[2][1] = "A todo gas"
+
+
+
+	//	peliculas := [3] string{"La verdad duele" , "Ciudadano ejemplar", "Batman"}
+
+
+
+	fmt.Println(len(peliculas));
 
 	time.Sleep(time.Second * 1);
 
