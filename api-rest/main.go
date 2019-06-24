@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
 	"log"
@@ -33,7 +34,14 @@ func Contact (w http.ResponseWriter , r *http.Request){
 }
 
 func MovieList (w http.ResponseWriter , r *http.Request){
-	fmt.Fprintf(w , "Listado de peliculas")
+	movies := Movies{
+		Movie{"Sin limites" , 2013, "Desconocido"},
+		Movie{"Batman begins", 1999, "Scorsese"},
+		Movie{"A todo gas" , 2005 , "Juan Antonio"},
+	}
+
+	//fmt.Fprintf(w , "Listado de peliculas")
+	json.NewEncoder(w).Encode(movies)
 }
 
 func MovieShow (w http.ResponseWriter , r *http.Request){
