@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cac9504-be2e-4360-9066-6d91d8baa16c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/programa.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-rest/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fichero.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lector.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hola-mundo.go" beforeDir="false" afterPath="$PROJECT_DIR$/hola-mundo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programa.go" beforeDir="false" afterPath="$PROJECT_DIR$/programa.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,10 +17,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/programa.go">
+        <entry file="file://$PROJECT_DIR$/api-rest/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="331">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="e#14#52#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,6 +46,9 @@
       <list>
         <option value="$PROJECT_DIR$/hola-mundo.go" />
         <option value="$PROJECT_DIR$/programa.go" />
+        <option value="$PROJECT_DIR$/lector.go" />
+        <option value="$PROJECT_DIR$/fichero.txt" />
+        <option value="$PROJECT_DIR$/api-rest/main.go" />
       </list>
     </option>
   </component>
@@ -61,6 +69,11 @@
             <path>
               <item name="curso-go" type="b2602c69:ProjectViewProjectNode" />
               <item name="curso-go" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="curso-go" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso-go" type="462c0819:PsiDirectoryNode" />
+              <item name="api-rest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -93,12 +106,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build programa.go">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build hola-mundo.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="curso-go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/hola-mundo.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build lector.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="curso-go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/lector.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="curso-go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/api-rest/main.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -112,10 +141,21 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build lector.go" />
         <item itemvalue="Go Build.go build programa.go" />
         <item itemvalue="Go Build.go build hola-mundo.go" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -127,15 +167,15 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.4969743" weight="0.2735043" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5030257" side_tool="true" visible="true" weight="0.24957265" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.4871407" weight="0.26153848" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.51437217" side_tool="true" visible="true" weight="0.16581197" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4969743" visible="true" weight="0.24957265" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48562783" visible="true" weight="0.16581197" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49848714" weight="0.32991454" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -158,8 +198,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/programa.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="88">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#14#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lector.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#14#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fichero.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-rest/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#14#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
